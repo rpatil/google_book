@@ -70,6 +70,8 @@ module GoogleBook
 
     def set_filter_type(type)
       case type.to_i
+      when 0
+        type = ""
       when 1
         type = "free-ebooks"
       when 2
